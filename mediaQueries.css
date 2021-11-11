@@ -1,0 +1,109 @@
+@media screen and (min-width: 500px) {
+    .userConnexion div {
+        display: flex;
+    }
+    .userConnexion a i {
+        margin-left: 5px;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 125px 250px 125px;
+        
+    }
+    nav ul {
+        grid-column: 2 / 3;
+    }
+    .userConnexion {
+        justify-content: center;
+    }
+    .breadcrumb {
+        grid-column: 1 / 5;
+    }
+}
+@media screen and (min-width: 634px) {
+    .breadcrumb {
+        display: block;
+        padding: 10px 16px;
+        list-style: none;
+        background: #eee;
+    }
+    .breadcrumb ul {
+        padding-left: 0;
+    }
+    .breadcrumb ul li {
+        display: inline;
+        font-size: 18px;
+    }
+    .breadcrumb ul li+li::before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0";
+    }
+    .breadcrumb ul li a {
+        color: #0275d8;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .breadcrumb ul li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+    
+    .breadcrumb ul li a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 300px 1fr 200px 200px;
+        
+    }
+    nav ul {
+        grid-column: 1 / 2;
+    }
+    .userConnexion {
+        justify-content: end;
+    }
+   
+    .socials {
+        display: inline;
+        grid-column: 3 / 4;
+    }
+    .searchBar {
+        display: inline;
+        grid-column: 4 / 5;
+    }
+    .socials ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .socials ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+    .socials ul li a i:hover {
+        color: #2169EC;
+    }
+   
+    
+}
+
+@media screen and (min-width: 1020px) {
+    section {
+        height: 200px;
+    }
+   section div {
+       flex-direction: row;
+       margin: 10px;
+   }
+}
+    
