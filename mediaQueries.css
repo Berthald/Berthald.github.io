@@ -1,4 +1,7 @@
 @media screen and (min-width: 500px) {
+    .loremSearch {
+        grid-column: 1 / 4;
+    }
     .userConnexion div {
         display: flex;
     }
@@ -7,7 +10,7 @@
     }
     nav {
         display: grid;
-        grid-template-columns: 125px 250px 125px;
+        grid-template-columns: 1fr 2fr 1fr;
         
     }
     nav ul {
@@ -16,45 +19,44 @@
     .userConnexion {
         justify-content: center;
     }
-    .breadcrumb {
-        grid-column: 1 / 5;
-    }
-}
-@media screen and (min-width: 634px) {
-    .breadcrumb {
-        display: block;
-        padding: 10px 16px;
-        list-style: none;
-        background: #eee;
-    }
-    .breadcrumb ul {
-        padding-left: 0;
-    }
-    .breadcrumb ul li {
-        display: inline;
-        font-size: 18px;
-    }
-    .breadcrumb ul li+li::before {
-        padding: 8px;
-        color: black;
-        content: "/\00a0";
-    }
-    .breadcrumb ul li a {
-        color: #0275d8;
-        text-decoration: none;
-        font-weight: bold;
-    }
-    .breadcrumb ul li a:hover {
-        color: #01447e;
-        text-decoration: underline;
-    }
     
-    .breadcrumb ul li a {
-        font-size: 16px;
-    }
 }
 
+
 @media screen and (min-width: 768px) {
+    .sortingTrip {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .sortingTrip p {
+        display: block;
+        grid-column: 3 / 4;
+        text-align: center;
+        text-decoration: underline;
+        font-size: small;
+        
+    }
+    .sortingTrip .refineSearch {
+        grid-column: 1 / 4;
+        display: inline-block;
+    }
+    .sortingTrip .refineSearch button {
+        width: 125px;
+        border: solid lightgrey 1px;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .sortingTrip .refineSearch button:hover {
+        background-color: #005589;
+        color: white;
+    }
+    .sortingTrip a {
+        color: black;
+    }
+    .loremSearch {
+        grid-column: 1 / 5;
+    }
     #card {
         flex-direction: row;
         flex-wrap: wrap;
@@ -98,10 +100,10 @@
 }
 
 @media screen and (min-width: 1020px) {
-    section {
+    .loremSearch {
         height: 200px;
     }
-   section div {
+   .loremSearch div {
        flex-direction: row;
        margin: 10px;
    }
