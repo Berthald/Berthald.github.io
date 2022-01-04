@@ -2,12 +2,7 @@
     .loremSearch {
         grid-column: 1 / 4;
     }
-    .userConnexion div {
-        display: flex;
-    }
-    .userConnexion a i {
-        margin-left: 5px;
-    }
+    
     nav {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -18,6 +13,9 @@
     }
     .userConnexion {
         justify-content: center;
+    }
+    footer ul li {
+        width: 170px;
     }
     
 }
@@ -71,7 +69,7 @@
         grid-column: 1 / 2;
     }
     .userConnexion {
-        justify-content: end;
+        justify-content: start;
     }
    
     .socials {
@@ -95,6 +93,9 @@
     .socials ul li a i:hover {
         color: #2169EC;
     }
+    footer div br  {
+        display: none;
+    }
    
     
 }
@@ -107,5 +108,20 @@
        flex-direction: row;
        margin: 10px;
    }
+   #link {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 1fr 1fr ;
+   }
+}
+
+@media screen and (min-width: 1250px) {
+    .carousel {
+        display: flex;
+        justify-content: center;
+    }
+    #carouselExampleIndicators {
+        width: 1250px;
+    }
 }
     
