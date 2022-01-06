@@ -24,7 +24,7 @@ nav {
 a {
     text-decoration: none;
 }
-nav ul, .sous-menu li a, .userConnexion, .userConnexion a, .loremSearch div, #card, footer ul {
+nav ul, .sous-menu li a, .userConnexion a, .loremSearch div, #card, footer ul {
     display: flex;
 }
 nav > ul {
@@ -93,29 +93,9 @@ nav > ul > li > a {
 .sous-menu > li:hover > a {
     color: white;
 }
-
-.userConnexion  {
-   align-items: center;
+.userConnexion {
+    display: none;
 }
-.userConnexion div a {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 25px;
-    width: 25px;
-    background-color: black;
-    border-radius: 50%;
-}
-.userConnexion a {
-    
-    font-size: 14px;
-    color: black;
-}
-.userConnexion a:hover {
-    color: #2169EC;
-}
-
-
 .socials, .searchBar {  
  display: none;
 }

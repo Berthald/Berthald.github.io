@@ -12,7 +12,22 @@
         grid-column: 2 / 3;
     }
     .userConnexion {
+        display: flex;
         justify-content: center;
+    }
+    .userConnexion button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 25px;
+        width: 25px;
+        background-color: black;
+        border-radius: 50%;
+        border: none;
+    }
+    .userConnexion button:hover {
+        background-color: #2169EC;
     }
     footer ul li {
         width: 170px;
