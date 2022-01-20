@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" />
     
 </head>
 <body>
@@ -24,19 +25,19 @@
             </div>
             <div class="modal-body" style="height: 350px;">
 
-                <form style="display: flex; flex-direction: column;" method="get">
+                <form style="display: flex; flex-direction: column;" method="POST" action="/fake-backend.php">
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Adresse Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label for="InputEmail" class="form-label">Adresse Email</label>
+                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
                       <div id="emailHelp" class="form-text">Nous ne partagerons jamais votre adresse avec qui que ce soit.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Mot de passe</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+                      <label for="InputPassword" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="InputPassword">
                     </div>
                     <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Se souvenir de moi</label>
+                      <input type="checkbox" class="form-check-input" id="Check">
+                      <label class="form-check-label" for="Check">Se souvenir de moi</label>
                     </div>
                     <button type="submit" class="btn btn-primary" style="background-color:#005589;">Soumettre</button>
                     <a href="#" style="text-align: center;margin-top: 15px;">Mot de passe oublié ou 1ère connexion ?</a>
@@ -62,9 +63,9 @@
             </ul>
           </li>
             <li class="menu-deroulant">
-                <a href="#">Evénements</a>
+                <a href="#">Activités</a>
                 <ul class="sous-menu">
-                  <li><a href="#">Concours</a></li>
+                  <li><a href="/Evenements.html">Nos événements</a></li>
                   <li><a href="#">Découvertes mensuelles</a></li>
                 </ul>
             </li>
@@ -86,7 +87,7 @@
             </div>
             
             <div class="searchBar">
-                <input style="width: 80%;" type="search" name="q" placeholder="Recherchez sur le site">
+                <input style="width: 80%;" type="search" name="q" placeholder="Recherche...">
                 <button style="border: none; background: white;"><i class="fas fa-search"></i></button>
             </div>
   
@@ -194,7 +195,7 @@
                 <h3><i class="fas fa-ticket-alt"> Participez à nos événements</i></h3>
                 
                 <p>Inscrivez-vous dès à présent et tenter votre chance afin de remporter nos voyages lors des événements saisonnier.</p>
-                <a href="#">ACCEDEZ AUX EVENEMENTS </a>
+                <a href="/Evenements.html">ACCEDEZ AUX EVENEMENTS </a>
             </section>
         </article>
         <div class="carousel">

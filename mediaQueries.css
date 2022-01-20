@@ -32,6 +32,18 @@
     footer ul li {
         width: 170px;
     }
+    /*-------------------------------
+    mediaQueries de la page événements
+    */
+    .headBand {
+        display: block;
+        grid-column: 1 / 5;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background-color: lightgray;
+    }
+    /*----------------------------------
+    */
     
 }
 
@@ -138,5 +150,70 @@
     #carouselExampleIndicators {
         width: 1250px;
     }
+}
+
+/*-----------------------------------------------
+mediaqueries page événements
+*/
+@media screen and (min-width: 1140px) {
+    main {
+        width: 100%;
+        height: 100vh;
+    }
+      main .leftBox {
+          width: 40%;
+          height: 100%;
+          float: left;
+          padding: 50px;
+      }
+      main .leftBox .content {
+          padding: 40px;
+      }
+      main .leftBox .content:hover h1 {
+          font-size: 50px;
+      }
+      main .events {
+          position: relative;
+          width: 60%;
+          height: 100%;
+          background: transparent;
+           float: right;
+      }
+      main .events ul {
+          position: absolute;
+          padding: 40px 40px 40px 40px;
+          
+      }
+      main .events ul li {
+          height: 255px;
+      }
+      main .events ul li .time {
+          padding: 20px;
+          width: 30%;
+          height: 100%;
+      }
+      main .events ul li .time h2 {
+          font-size: 60px;
+          line-height: 30px;
+      }
+      main .events ul li .time h2 span {
+          font-size: 30px;
+    
+      }
+      main .events ul li .details {
+          width: 70%;
+          float: left;
+      }
+      main .events ul li .details h3 {
+          margin: 0;
+      }
+      main .events ul li .details p {
+          margin: 10px 0 0;
+      }
+      main .events ul li .details a {
+          padding: 10px 15px;
+          margin-top: 15px;
+      }
+    
 }
     
