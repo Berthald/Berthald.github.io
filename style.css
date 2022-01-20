@@ -3,10 +3,11 @@
 }
 
 body {
+    
     margin: 0;
     padding: 0;
     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
-    box-sizing: border-box;
+    
     
 }
 
@@ -39,7 +40,6 @@ nav ul {
     
 }
 nav > ul > li {
-    background: white;
     position: relative;
     height: 100%;
     flex: 1;
@@ -193,7 +193,6 @@ nav > ul > li > a {
 .card-body {
     text-align: center;
     padding: 15px 20px;
-    box-sizing: border-box;
 }
 #card {
     flex-direction: column;
@@ -241,8 +240,6 @@ section a:after {
 }
 .logo {
     height: 200px;
-    display: block;
-    justify-content: center;
     background-image: url(/images/logo.png);
     background-position: center;
     background-size: contain;
@@ -259,16 +256,17 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 150px;
+    height: auto;
     background-color: #005589;
 }
 footer div {
     text-align: center;
+    padding-top: 5px;
 }
 footer ul {
-    display: flex;
     justify-content: center;
     padding: 0;
+    margin-bottom: 5px;
 }
 footer ul li  {
     text-align: center;
@@ -311,4 +309,119 @@ footer a:hover {
       border-top: 3px solid #2169EC;
       box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
     }
+  }
+
+  /* -------------------------------------
+  style css de la page événements
+  */
+  .headBand {
+      display: none;
+  }
+  .breadcrumb {
+    margin : 0;
+    margin-left: 10px;
+  }
+  .nreadCrumb li a:hover {
+      color: #005589;
+  }
+  main {
+    height: 100%;
+}
+  main .leftBox {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+  }
+  main .leftBox .content {
+      color: #fff;
+      background: rgba(0,0,0,.5);
+      padding: 20px;
+      transition: .5s;
+  }
+  main .leftBox .content:hover {
+      background: #005589;
+  } 
+  main .leftBox .content:hover h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+      text-transform: uppercase;
+  }
+  main .leftBox .content:hover p {
+      margin: 10px 0 0;
+      padding: 0;
+  }
+  main .events {
+      width: 100%;
+      height: auto;
+  }
+  main .events ul {
+      margin: 0;
+      padding: 0 20px 20px;
+  }
+  main .events ul li {
+      list-style: none;
+      background: #fff;
+      height: auto;
+      margin: 15px 0;
+  }
+  main .events ul li .time {
+      position: relative;
+      background: #262626;
+      width: 80px;
+      height: 80px;
+      float: left;
+      text-align: center;
+      transition: .5s;
+  }
+  main .events ul li:hover .time {
+      background: #005589;
+  }
+  main .events ul li .time h2 {
+      position: absolute;
+      margin: 0;
+      padding: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #fff;
+      font-size: 30px;
+      line-height: 24px;
+  }
+  main .events ul li .time h2 span {
+      font-size: 20px;
+
+  }
+  main .events ul li .details {
+      padding: 20px;
+      background: #fff;
+      height: 100%;
+  }
+  main .events ul li .details h3 {
+      font-weight: bold;
+      position: relative;
+      margin-left: 80px;
+      padding: 0;
+      font-size: 22px;
+  }
+  main .events ul li .details p {
+      position: relative;
+      padding: 0;
+      font-size: 16px;
+  }
+  main .events ul li .details a {
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 2px solid #262626;
+      margin-bottom: 5px;
+      font-size: 18px;
+      transition: .5s;
+      float: right;
+  }
+  main .events ul li .details a:hover {
+      background: #005589;
+      color: #fff;
+      border-color: #005589;
   }
