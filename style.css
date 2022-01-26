@@ -7,6 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+    box-sizing: border-box;
     
     
 }
@@ -19,7 +20,7 @@ nav {
     font-size: 18px;
     position: relative;
     top: 0;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 0;
 }
 a {
@@ -408,6 +409,7 @@ footer a:hover {
       position: relative;
       padding: 0;
       font-size: 16px;
+      margin-left: 70px;
   }
   main .events ul li .details a {
       color: black;
